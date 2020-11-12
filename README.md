@@ -1,4 +1,6 @@
-# CS445-Final-LedbetterCriswell
+# Student Showcase Demo
+
+Colin Ledbetter and Zachary Criswell
 
 # Development Environment Setup
 
