@@ -20,7 +20,7 @@ Colin Ledbetter and Zachary Criswell
 
 1.  Install [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/).
 2.  Once installed, run the software and open the solution found at [root]/BSU.StudentShowcase.sln
-3.  Build and run the project by running the IIS Project configuration using the debug menu in the toolbar at the top of the IDE.
+3.  Build and run the project by running the IIS Express configuration using the debug menu in the toolbar at the top of the IDE.
 
 ## Other Operating Systems
 
