@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using BSU.StudentShowcase.Frontend.ViewModels.MultiProject;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using BSU.StudentShowcase.ViewModels;
+using System.Collections.Generic;
 
 namespace BSU.StudentShowcase.Controllers
 {
@@ -20,18 +16,45 @@ namespace BSU.StudentShowcase.Controllers
 
         public IActionResult Index()
         {
-            return View();
-        }
+            var model = new MultiProjectIndexViewModel
+            {
+                ProjectPanelViewModels = new List<ProjectPanelViewModel>()
+                {
+                    new ProjectPanelViewModel
+                    {
+                        Category = "High Speed Computing",
+                        ProjectName = "Parallel Processing inside of the Mersenne Prime Search FUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUCK YEAH",
+                        School = "PragerU",
+                        StudentName = "Dennis Prager",
+                        ImagePreviewUrl = "https://i.ytimg.com/vi/Izn1ygP-gqM/maxresdefault.jpg",
+                    },
+                    new ProjectPanelViewModel
+                    {
+                        Category = "Object Oriented Programming",
+                        ProjectName = "Finding the Longest Template Error in C++",
+                        School = "Trump University",
+                        StudentName = "Plumber Joe",
+                        ImagePreviewUrl = "http://scp-wiki.wdfiles.com/local--files/scp-087/087stair.png",
+                    },
+                    //new ProjectPanelViewModel
+                    //{
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+                    //},
+                    //new ProjectPanelViewModel
+                    //{
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+                    //},
+                    //new ProjectPanelViewModel
+                    //{
+
+                    //},
+                    //new ProjectPanelViewModel
+                    //{
+
+                    //},
+                }
+            };
+            return View(model);
         }
     }
 }

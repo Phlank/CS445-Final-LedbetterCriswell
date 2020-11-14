@@ -4,7 +4,24 @@
     ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div class="row justify-content-md-center">
+        @foreach (var panel in Model.ProjectPanelViewModels)
+        {
+            <div class="col col-md-auto">
+                <a asp-controller="SingleProject" asp-action="Index">
+                    <div class="card" style="width: 18rem;">
+                        <img src="@panel.ImagePreviewUrl" class="card-img-top" alt="preview-image" width="300" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title text-truncate" style="display: block">@panel.ProjectName</h5>
+                            <p>@panel.StudentName</p>
+                            <p>@panel.School</p>
+                            <span class="badge badge-pill badge-primary">@panel.Category</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
 </div>
+
