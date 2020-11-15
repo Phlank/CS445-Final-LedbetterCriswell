@@ -4,18 +4,19 @@
     ViewData["Title"] = "Home";
 }
 
+<h1>Student Work</h1>
+
 <div class="container">
     <div class="row justify-content-md-center">
         @foreach (var panel in Model.ProjectPanelViewModels)
         {
-            <div class="col col-md-auto">
-                <a asp-controller="SingleProject" asp-action="Index">
-                    <div class="card" style="width: 18rem;">
+            <div class="col col-md-auto p-md-2">
+                <a class="card-text-no-underline" asp-controller="SingleProject" asp-action="Index">
+                    <div class="card rounded-lg" style="width: 18rem;">
                         <img src="@panel.ImagePreviewUrl" class="card-img-top" alt="preview-image" width="300" height="200">
                         <div class="card-body">
                             <h5 class="card-title text-truncate" style="display: block">@panel.ProjectName</h5>
-                            <p>@panel.StudentName</p>
-                            <p>@panel.School</p>
+                            <div class="text-secondary panel-text-no-underline" style="text-decoration: none">@panel.StudentName<br />@panel.School</div>
                             <span class="badge badge-pill badge-primary">@panel.Category</span>
                         </div>
                     </div>
@@ -24,4 +25,3 @@
         }
     </div>
 </div>
-

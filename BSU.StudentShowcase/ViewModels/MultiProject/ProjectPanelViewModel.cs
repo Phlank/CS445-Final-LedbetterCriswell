@@ -8,6 +8,7 @@ namespace BSU.StudentShowcase.Frontend.ViewModels.MultiProject
     public class ProjectPanelViewModel
     {
         public string ProjectName { get; set; }
+        public string ProjectType { get; set; }
         public string StudentName { get; set; }
         public string Category { get; set; }
         public string School { get; set; }
