@@ -1,0 +1,42 @@
+﻿@model BSU.StudentShowcase.Frontend.ViewModels.SingleProject.SingleProjectViewModel
+
+@{
+    ViewData["Title"] = "Project View";
+}
+
+<div class="container w-100">
+    <table style="width: 100%">
+        <tr style="width: 100%">
+            <td style="width: 50%"><h3 class="text-xl-left">@Model.StudentName</h3></td>
+            <td style="width: 50%; text-align: right;"><span class="badge badge-pill badge-primary">@Model.Catagory</span></td>
+        </tr>
+    </table>
+    <h3>@Model.School</h3>
+    <h5>@Model.DateUploaded</h5>
+    <h2 class="text-center">@Model.ProjectName</h2>
+
+    <div>
+        @if (Model.ProjectType.ToLower() == "text")
+        {
+            <div class="card" height="768">
+                <pre class="text-wrap">@Model.Content</pre>
+            </div>
+        }
+        @if (Model.ProjectType.ToLower() == "brochure")
+        {
+            <img width="1024" height="768" src="@Model.Content" class="card-img-top" alt="preview-image">
+        }
+        @if (Model.ProjectType.ToLower() == "video")
+        {
+            <div class="embed-responsive embed-responsive-1by1">
+                <iframe width="1024" height="768" src="@Model.Content" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        }
+    </div>
+
+    <div>
+        <br/>
+        <button type="button" class="btn btn-block btn-success btn-lg">Join Video Call</button>
+    </div>
+
+</div>
