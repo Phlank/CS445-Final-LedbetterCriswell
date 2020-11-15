@@ -21,16 +21,14 @@ namespace BSU.StudentShowcase.Frontend.Controllers
         {
             var model = new SingleProjectViewModel
             {
-
                 Catagory = "America",
                 Description = "America is Great",
                 ProjectName = "Why America is Great",
-                ProjectType = "Video",
+                ProjectType = "Text",
                 School = "Trump University",
                 StudentName = "Cheato King",
                 DateUploaded = "May 5",
-                VideoURL = "https://www.youtube.com/embed/8N5k3NeGoCw"
-
+                Content = "	This is in a certain format. This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format This is in a certain format This is in a certain format. This is in a certain format.This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format This is in a certain format This is in a certain format. "
 
             };
             return View(model);

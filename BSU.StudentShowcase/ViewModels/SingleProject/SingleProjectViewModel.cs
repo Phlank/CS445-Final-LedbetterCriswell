@@ -15,9 +15,7 @@ namespace BSU.StudentShowcase.Frontend.ViewModels.SingleProject
         public string Description { get; set; }
         public string DateUploaded { get; set; }
         public string Summary { get; set; }
-        public string Text { get; set; }
-        public string BrochureURL { get; set; }
-        public string VideoURL { get; set; }
+        public string Content { get; set; }
 
     }
 }
