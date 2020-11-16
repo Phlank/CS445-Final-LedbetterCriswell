@@ -1,5 +1,6 @@
 ﻿using BSU.StudentShowcase.Frontend.ViewModels.JudgeApplication;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,16 +10,30 @@ namespace BSU.StudentShowcase.Frontend.Controllers
 {
     public class JudgeApplicationController : Controller
     {
+        private readonly ILogger<JudgeApplicationController> _logger;
+
+        public JudgeApplicationController(ILogger<JudgeApplicationController> logger)
+        {
+            _logger = logger;
+        }
+        [HttpGet]
         public IActionResult Index()
         {
-            var model = new JudgeApplicationIndexViewModel
-            {
+            return View();
+        }
 
-            };
+        [HttpPost]
+        public IActionResult Index(JudgeApplicationIndexViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction(nameof(OnSubmit));
+            }
             return View(model);
         }
-        [HttpPost]
-        public IActionResult Submit(JudgeApplicationIndexViewModel result)
+        
+        [HttpGet]
+        public IActionResult OnSubmit(JudgeApplicationIndexViewModel result)
         {
             return View();
         }
