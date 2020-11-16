@@ -1,0 +1,35 @@
+﻿@model BSU.StudentShowcase.Frontend.ViewModels.JudgeApplication.JudgeApplicationIndexViewModel
+
+
+<title>Judge Application Form</title>
+
+<div class="container">
+    <h2>Judge Applciation</h2>
+    <form class="form-horizontal" asp-controller="JudgeApplication" asp-action="Submit" method="post">
+        <div class="form-row">
+            <label class="col-form-label col-sm-2" for="name">Name:</label>
+            <input class="form-control col-sm-8" id="name" placeholder="Enter first and last name" asp-for="Name">
+        </div>
+        <br/>
+        <div class="form-row">
+            <label class="col-form-label col-sm-2" for="username">Username:</label>
+            <input class="form-control col-sm-8" id="username" placeholder="Create a Username" asp-for="Username" />
+        </div>
+        <br/>
+        <div class="form-row">
+            <label class="col-form-label col-sm-2" for="position">Position:</label>
+            <input class="form-control col-sm-8" id="position" placeholder="What is your job title?" asp-for="Position" />
+        </div>
+        <br/>
+        <div class="form-row">
+            <label class="col-form-label col-sm-2" for="email">Email:</label>
+            <input class="form-control col-sm-8" id="email" placeholder="Enter email" asp-for="Email" />
+        </div>
+        <br/>
+        <div class="form-row">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
