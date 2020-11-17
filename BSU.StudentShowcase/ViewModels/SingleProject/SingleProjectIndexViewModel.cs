@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BSU.StudentShowcase.Frontend.ViewModels.SingleProject
 {
-    public class SingleProjectViewModel
+    public class SingleProjectIndexViewModel
     {
         public string StudentName { get; set; }
         public string School { get; set; }
