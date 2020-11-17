@@ -65,5 +65,57 @@ namespace BSU.StudentShowcase.Controllers
         {
             return View();
         }
+
+        public IActionResult JudgeIndex()
+        {
+            var model = new JudgeMultiProjectIndexViewModel
+            {
+                JudgeProjectPanelViewModels = new List<JudgeProjectPanelViewModel>()
+                {
+                    new JudgeProjectPanelViewModel
+                    {
+                        Category = "High Performance Computing",
+                        ProjectName = "Parallel Processing inside of the Mersenne Prime Search",
+                        ProjectType = "Video",
+                        School = "PragerU",
+                        StudentName = "Dennis Prager",
+                        ImagePreviewUrl = "https://i.ytimg.com/vi/Izn1ygP-gqM/maxresdefault.jpg",
+                        Judged = true,
+                    },
+                    new JudgeProjectPanelViewModel
+                    {
+                        Category = "Object Oriented Programming",
+                        ProjectName = "Finding the Longest Compiler Error in C++",
+                        ProjectType = "Text",
+                        School = "Trump University",
+                        StudentName = "Plumber Joe",
+                        ImagePreviewUrl = "http://scp-wiki.wdfiles.com/local--files/scp-087/087stair.png",
+                        Judged = false,
+                    },
+                    new JudgeProjectPanelViewModel
+                    {
+                        Category = "Algorithms",
+                        ProjectName = "Bogosort Effectiveness on Various Pseudorandom Algorithms",
+                        ProjectType = "Brochure",
+                        School = "Ball State University",
+                        StudentName = "Colin Bedwetter",
+                        ImagePreviewUrl = "",
+                        Judged = false
+                    },
+                    new JudgeProjectPanelViewModel
+                    {
+                        Category = "Algorithms",
+                        ProjectName = "Bogosort Effectiveness on Various Pseudorandom Algorithms",
+                        ProjectType = "Brochure",
+                        School = "Ball State University",
+                        StudentName = "Colin Bedwetter",
+                        ImagePreviewUrl = "",
+                        Judged = true
+                    }
+                }
+            };
+            return View(model);
+        }
+
     }
 }
