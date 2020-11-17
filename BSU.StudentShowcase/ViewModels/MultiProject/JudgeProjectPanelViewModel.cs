@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BSU.StudentShowcase.Frontend.ViewModels.MultiProject
 {
-    public class ProjectPanelViewModel
+    public class JudgeProjectPanelViewModel
     {
         public string ProjectName { get; set; }
         public string ProjectType { get; set; }
@@ -13,5 +13,6 @@ namespace BSU.StudentShowcase.Frontend.ViewModels.MultiProject
         public string Category { get; set; }
         public string School { get; set; }
         public string ImagePreviewUrl { get; set; }
+        public bool Judged { get; set; }
     }
 }

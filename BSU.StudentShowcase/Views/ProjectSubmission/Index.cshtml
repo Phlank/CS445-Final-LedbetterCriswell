@@ -1,0 +1,72 @@
+﻿@model BSU.StudentShowcase.Frontend.ViewModels.ProjectSubmission.ProjectSubmissionIndexViewModel
+
+    <div class="container">
+        <h2>Project Submission</h2>
+        <form asp-controller="ProjectSubmission" asp-action="Index" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger" hidden></div>
+            <div class="form-row" style="width: auto;">
+                <label class="col-form-label col-sm-2" asp-for="StudentName">Your Name:</label>
+                <input class="col-sm-8 form-control" type="text" placeholder="Name" asp-for="@Model.StudentName" />
+                <span class="text-danger col-sm-10" asp-validation-for="@Model.StudentName"></span>
+            </div>
+            <br />
+            <div class="form-row" style="width: auto;">
+                <label class="col-form-label col-sm-2">Your Email:</label>
+                <input class="col-sm-8 form-control" type="text" placeholder="Email" asp-for="@Model.Email" />
+                <span class="text-danger col-sm-10" asp-validation-for="@Model.Email"></span>
+            </div>
+            <br />
+            <div class="form-row" style="width: auto;">
+                <label class="col-form-label col-sm-2">School Name:</label>
+                <input class="col-sm-8 form-control" type="text" placeholder="School" asp-for="@Model.SchoolName" id="school-name" />
+                <span class="text-danger col-sm-10" asp-validation-for="@Model.SchoolName"></span>
+            </div>
+            <br />
+            <div class="form-row" style="width: auto;">
+                <label class="col-form-label col-sm-2">Advisor's Name:</label>
+                <input class="col-sm-8 form-control" type="text" placeholder="Advisor" asp-for="@Model.AdvisorName" />
+                <span class="text-danger col-sm-10" asp-validation-for="@Model.AdvisorName"></span>
+            </div>
+            <br />
+            <div class="form-row">
+                <label class="col-form-label col-sm-2">Title of Project:</label>
+                <input class="col-sm-8 form-control" type="text" placeholder="Title" asp-for="@Model.Title" />
+                <span class="text-danger col-sm-10" asp-validation-for="@Model.Title"></span>
+            </div>
+            <br />
+            <div class="form-row">
+                <label class="col-form-label col-sm-2">Project category</label>
+                <input class="col-sm-8 form-control" type="text" placeholder="Category" asp-for="@Model.Category" />
+                <span class="text-danger col-sm-10" asp-validation-for="@Model.Category"></span>
+            </div>
+            <br />
+            <div class="form-row">
+                <label class="col-form-label col-sm-2">Project Type:</label>
+                <span class="btn-group btn-group-toggle col-sm-3" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" asp-for="@Model.ProjectType" id="option1" autocomplete="off" value="Text" checked /> Text
+                    </label>
+                    <label class="btn btn-secondary active">
+                        <input type="radio" asp-for="@Model.ProjectType" id="option2" autocomplete="off" value="Brochure" /> Brochure
+                    </label>
+                    <label class="btn btn-secondary active">
+                        <input type="radio" asp-for="@Model.ProjectType" id="option3" autocomplete="off" value="Video" /> Video
+                    </label>
+                </span>
+            </div>
+            <br />
+            <div class="form-row">
+                <label class="col-form-label col-sm-2">Content:</label>
+                <input class="col-sm-8 form-control" type="text" placeholder="Content" asp-for="@Model.Content" />
+                <span class="text-danger col-sm-10" asp-validation-for="@Model.Content"></span>
+            </div>
+            <br />
+            <div class="form-row">
+                <label class="col-form-label col-sm-2">Additional Notes:</label>
+                <input class="col-sm-8 form-control" type="text" placeholder="Notes" asp-for="@Model.AdditionalNotes" />
+            </div>
+            <br />
+            <input type="datetime" asp-for="@Model.SubmittedOn" value="@DateTime.Now" hidden />
+            <input type="submit" class="btn btn-primary" value="Submit" />
+        </form>
+    </div>

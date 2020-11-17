@@ -1,4 +1,4 @@
-﻿@model BSU.StudentShowcase.Frontend.ViewModels.MultiProject.MultiProjectIndexViewModel
+﻿@model BSU.StudentShowcase.Frontend.ViewModels.MultiProject.JudgeMultiProjectIndexViewModel
 
 @{
     ViewData["Title"] = "Home";
@@ -8,11 +8,23 @@
 
 <div class="container">
     <div class="row justify-content-md-center">
-        @foreach (var panel in Model.ProjectPanelViewModels)
+        @foreach (var panel in Model.JudgeProjectPanelViewModels)
         {
             <div class="col col-md-auto p-md-2">
                 <a class="card-text-no-underline" asp-controller="SingleProject" asp-action="Index">
                     <div class="card rounded-lg" style="width: 18rem;">
+                        @if (@panel.Judged.Equals(false))
+                        {
+                            <div class="alert alert-warning" role="alert">
+                                This has not been judged yet!
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-success" role="alert">
+                                Finished Judging.
+                            </div>
+                        }
                         <img src="@panel.ImagePreviewUrl" class="card-img-top" alt="preview-image" width="300" height="200">
                         <div class="card-body">
                             <h5 class="card-title text-truncate" style="display: block">@panel.ProjectName</h5>
