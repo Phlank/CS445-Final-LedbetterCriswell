@@ -11,7 +11,7 @@
         @foreach (var panel in Model.JudgeProjectPanelViewModels)
         {
             <div class="col col-md-auto p-md-2">
-                <a class="card-text-no-underline" asp-controller="SingleProject" asp-action="Index">
+                <a class="card-text-no-underline" asp-controller="SingleProject" asp-action="JudgeIndex" asp-route-id="@Model.JudgeProjectPanelViewModels.IndexOf(panel)">
                     <div class="card rounded-lg" style="width: 18rem;">
                         @if (@panel.Judged.Equals(false))
                         {
