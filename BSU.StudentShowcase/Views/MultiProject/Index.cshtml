@@ -11,7 +11,7 @@
         @foreach (var panel in Model.ProjectPanelViewModels)
         {
             <div class="col col-md-auto p-md-2">
-                <a class="card-text-no-underline" asp-controller="SingleProject" asp-action="Index">
+                <a class="card-text-no-underline" asp-controller="SingleProject" asp-action="Index" asp-route-id="@Model.ProjectPanelViewModels.IndexOf(panel)">
                     <div class="card rounded-lg" style="width: 18rem;">
                         <img src="@panel.ImagePreviewUrl" class="card-img-top" alt="preview-image" width="300" height="200">
                         <div class="card-body">

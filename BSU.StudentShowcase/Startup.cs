@@ -56,6 +56,9 @@ namespace BSU.StudentShowcase
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=MultiProject}/{action=Index}");
+                endpoints.MapControllerRoute(
+                    name: "SingleProject",
+                    pattern: "{controller=SingleProject}/{action=Index}/{id}");
             });
         }
     }
