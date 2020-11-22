@@ -13,7 +13,6 @@ namespace BSU.StudentShowcase.Frontend.ViewModels.SingleProject
         public string Catagory { get; set; }
         public string ProjectType { get; set; }
         public string Description { get; set; }
-        public string DateUploaded { get; set; }
         public string Summary { get; set; }
         public string Content { get; set; }
 

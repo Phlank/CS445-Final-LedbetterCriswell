@@ -28,7 +28,7 @@ namespace BSU.StudentShowcase.Frontend.Controllers
                 ProjectType = "Text",
                 School = "Trump University",
                 StudentName = "Cheato King",
-                DateUploaded = "May 5",
+                Summary = "America is great because of capitalism",
                 Content = "	This is in a certain format. This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format This is in a certain format This is in a certain format. This is in a certain format.This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format This is in a certain format This is in a certain format. "
             };
             return View(model);
@@ -47,7 +47,7 @@ namespace BSU.StudentShowcase.Frontend.Controllers
                     ProjectType = "Text",
                     School = "Trump University",
                     StudentName = "Cheato King",
-                    DateUploaded = "May 5",
+                    Summary = "America is great because of capitalism",
                     Content = "	This is in a certain format. This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format This is in a certain format This is in a certain format. This is in a certain format.This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format This is in a certain format This is in a certain format. "
                 },
             };
@@ -65,7 +65,7 @@ namespace BSU.StudentShowcase.Frontend.Controllers
                 ProjectType = "Text",
                 School = "Trump University",
                 StudentName = "Cheato King",
-                DateUploaded = "May 5",
+                Summary = "America is great because of capitalism",
                 Content = "	This is in a certain format. This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format. This is in a certain format. This is in a certain format This is in a certain format This is in a certain format This is in a certain format. This is in a certain format.This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format.This is in a certain format.This is in a certain format This is in a certain format This is in a certain format This is in a certain format. "
             };
             return View(model);
