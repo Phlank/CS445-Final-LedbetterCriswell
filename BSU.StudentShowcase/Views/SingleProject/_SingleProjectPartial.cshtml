@@ -8,9 +8,10 @@
         </tr>
     </table>
     <h3>@Model.School</h3>
-    <h5>@Model.DateUploaded</h5>
     <h2 class="text-center">@Model.ProjectName</h2>
-
+    <h5>Project Summary:</h5>
+    <p>@Model.Summary</p>
+    </br>
     <div>
         @if (Model.ProjectType.ToLower() == "text")
         {
