@@ -78,3 +78,27 @@ a.card-text-no-underline:hover {
 .validation-summary-valid {
     display: none;
 }
+
+.judge-btn:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #005cbf;
+}
+
+.btn-secondary:not(:disabled):not(.disabled) {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #4e555b;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+div.alert.alert-success {
+    margin-bottom: 0;
+}
+
+div.alert.alert-warning {
+    margin-bottom: 0;
+}
