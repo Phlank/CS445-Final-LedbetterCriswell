@@ -2,6 +2,8 @@
 
 Colin Ledbetter and Zachary Criswell
 
+Deployment: https://bsustudentshowcasefrontend20201116210403.azurewebsites.net
+
 # Development Environment Setup
 
 ## Windows 7, 8, and 10
