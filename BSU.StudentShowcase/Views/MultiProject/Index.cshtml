@@ -11,11 +11,11 @@
         @foreach (var panel in Model.ProjectPanelViewModels)
         {
             <div class="col col-md-auto p-md-2">
-                <a class="card-text-no-underline" asp-controller="SingleProject" asp-action="Index">
+                <a class="card-text-no-underline" asp-controller="SingleProject" asp-action="Index" asp-route-id="@Model.ProjectPanelViewModels.IndexOf(panel)">
                     <div class="card rounded-lg" style="width: 18rem;">
                         <img src="@panel.ImagePreviewUrl" class="card-img-top" alt="preview-image" width="300" height="200">
                         <div class="card-body">
-                            <h5 class="card-title text-truncate" style="display: block">@panel.ProjectName</h5>
+                            <h5 style="min-height:53px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis;">@panel.ProjectName</h5>
                             <div class="text-secondary panel-text-no-underline" style="text-decoration: none">@panel.StudentName<br />@panel.School</div>
                             <span class="badge badge-pill badge-primary">@panel.Category</span>
                         </div>

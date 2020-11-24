@@ -24,18 +24,18 @@ namespace BSU.StudentShowcase.Controllers
                     {
                         Category = "High Performance Computing",
                         ProjectName = "Parallel Processing inside of the Mersenne Prime Search",
-                        ProjectType = "Video",
-                        School = "PragerU",
-                        StudentName = "Dennis Prager",
-                        ImagePreviewUrl = "https://i.ytimg.com/vi/Izn1ygP-gqM/maxresdefault.jpg",
+                        ProjectType = "Text",
+                        School = "Vincennes University",
+                        StudentName = "Alexa Palacios",
+                        ImagePreviewUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Digits_in_largest_prime_found_as_a_function_of_time.svg/1280px-Digits_in_largest_prime_found_as_a_function_of_time.svg.png",
                     },
                     new ProjectPanelViewModel
                     {
                         Category = "Object Oriented Programming",
                         ProjectName = "Finding the Longest Compiler Error in C++",
-                        ProjectType = "Text",
-                        School = "Trump University",
-                        StudentName = "Plumber Joe",
+                        ProjectType = "Video",
+                        School = "Ball State University",
+                        StudentName = "Zane Dennis",
                         ImagePreviewUrl = "http://scp-wiki.wdfiles.com/local--files/scp-087/087stair.png",
                     },
                     new ProjectPanelViewModel
@@ -43,19 +43,19 @@ namespace BSU.StudentShowcase.Controllers
                         Category = "Algorithms",
                         ProjectName = "Bogosort Effectiveness on Various Pseudorandom Algorithms",
                         ProjectType = "Brochure",
-                        School = "Ball State University",
-                        StudentName = "Colin Bedwetter",
-                        ImagePreviewUrl = ""
+                        School = "Northwestern University",
+                        StudentName = "Alan Suchecki",
+                        ImagePreviewUrl = "https://i.ytimg.com/vi/DaPJkYo2quc/maxresdefault.jpg"
                     },
                     new ProjectPanelViewModel
                     {
                         Category = "Algorithms",
                         ProjectName = "Bogosort Effectiveness on Various Pseudorandom Algorithms",
                         ProjectType = "Brochure",
-                        School = "Ball State University",
-                        StudentName = "Colin Bedwetter",
-                        ImagePreviewUrl = ""
-                    }
+                        School = "Northwestern University",
+                        StudentName = "Alan Suchecki",
+                        ImagePreviewUrl = "https://i.ytimg.com/vi/DaPJkYo2quc/maxresdefault.jpg"
+                    },
                 }
             };
             return View(model);
@@ -76,19 +76,19 @@ namespace BSU.StudentShowcase.Controllers
                     {
                         Category = "High Performance Computing",
                         ProjectName = "Parallel Processing inside of the Mersenne Prime Search",
-                        ProjectType = "Video",
-                        School = "PragerU",
-                        StudentName = "Dennis Prager",
-                        ImagePreviewUrl = "https://i.ytimg.com/vi/Izn1ygP-gqM/maxresdefault.jpg",
+                        ProjectType = "Text",
+                        School = "Vincennes University",
+                        StudentName = "Alexa Palacios",
+                        ImagePreviewUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Digits_in_largest_prime_found_as_a_function_of_time.svg/1280px-Digits_in_largest_prime_found_as_a_function_of_time.svg.png",
                         Judged = true,
                     },
                     new JudgeProjectPanelViewModel
                     {
                         Category = "Object Oriented Programming",
                         ProjectName = "Finding the Longest Compiler Error in C++",
-                        ProjectType = "Text",
-                        School = "Trump University",
-                        StudentName = "Plumber Joe",
+                        ProjectType = "Video",
+                        School = "Ball State University",
+                        StudentName = "Zane Dennis",
                         ImagePreviewUrl = "http://scp-wiki.wdfiles.com/local--files/scp-087/087stair.png",
                         Judged = false,
                     },
@@ -97,9 +97,9 @@ namespace BSU.StudentShowcase.Controllers
                         Category = "Algorithms",
                         ProjectName = "Bogosort Effectiveness on Various Pseudorandom Algorithms",
                         ProjectType = "Brochure",
-                        School = "Ball State University",
-                        StudentName = "Colin Bedwetter",
-                        ImagePreviewUrl = "",
+                        School = "Northwestern University",
+                        StudentName = "Alan Suchecki",
+                        ImagePreviewUrl = "https://i.ytimg.com/vi/DaPJkYo2quc/maxresdefault.jpg",
                         Judged = false
                     },
                     new JudgeProjectPanelViewModel
@@ -107,9 +107,9 @@ namespace BSU.StudentShowcase.Controllers
                         Category = "Algorithms",
                         ProjectName = "Bogosort Effectiveness on Various Pseudorandom Algorithms",
                         ProjectType = "Brochure",
-                        School = "Ball State University",
-                        StudentName = "Colin Bedwetter",
-                        ImagePreviewUrl = "",
+                        School = "Northwestern University",
+                        StudentName = "Alan Suchecki",
+                        ImagePreviewUrl = "https://i.ytimg.com/vi/DaPJkYo2quc/maxresdefault.jpg",
                         Judged = true
                     }
                 }
