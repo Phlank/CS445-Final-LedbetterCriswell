@@ -2,7 +2,7 @@
 
 Colin Ledbetter and Zachary Criswell
 
-Deployment: https://bsustudentshowcasefrontend20201116210403.azurewebsites.net
+Deployment: https://bsustudentshowcasefrontend20201129155648.azurewebsites.net/
 
 # Development Environment Setup
 
